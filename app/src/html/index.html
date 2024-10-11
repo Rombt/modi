@@ -3,12 +3,14 @@
   @@include('template-parts/parts/head.html',{ "title":"MODI test" })
 
   <body>
-    <!-- @@include('template-parts/debug-grid.html',{}) -->
-    @@include('template-parts/parts/header.html',{})
-    @@include('template-parts/parts/hero_block.html',{})
+    <div class="rmbt-page-wrap">
+      <!-- @@include('template-parts/debug-grid.html',{}) -->
+      @@include('template-parts/parts/header.html',{})
+      @@include('template-parts/parts/hero_block.html',{})
 
-    <main>@@include('template-parts/parts/content_block.html',{})</main>
+      <main>@@include('template-parts/parts/content_block.html',{})</main>
 
-    @@include('template-parts/parts/footer.html',{})
+      @@include('template-parts/parts/footer.html',{})
+    </div>
   </body>
 </html>

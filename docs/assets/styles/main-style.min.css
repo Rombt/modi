@@ -317,12 +317,12 @@ template {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  row-gap: 60px;
 }
 main {
   display: flex;
   flex-direction: column;
   row-gap: 60px;
+  margin-top: 100px;
 }
 /*центрующий контейнер контентной ширины*/
 .rmbt-container {
@@ -354,7 +354,6 @@ main {
   max-width: 1970px;
   padding-left: 30px;
   padding-right: 30px;
-  margin: 0 auto;
 }
 @media screen and (max-width: 1120px) {
   .rmbt-full-width {
@@ -1244,15 +1243,26 @@ for display results work function in the process of develope
   box-sizing: border-box;
   width: 100%;
   min-height: 60px;
-  border: 1px solid #000;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-bottom: 30px;
+  padding: 11px 64px 11px 64px;
+  border: 1px solid #d8d8d8;
+  border-radius: 20px;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+  font-size: 30px;
+  font-family: OpenSans;
+  font-weight: 600;
+  color: #000000;
 }
 .spoiler__title {
-  width: 800%;
+  width: 100%;
   padding-left: 15px;
   position: relative;
   text-transform: capitalize;
   font-weight: 600;
   height: 50px;
+  margin: 0px 0px 0px 0px;
   cursor: pointer;
 }
 .spoiler__title::after,
@@ -1262,8 +1272,9 @@ for display results work function in the process of develope
   right: 20px;
   top: 50%;
   transform: translate(0%, -50%);
-  width: 15px;
-  height: 2px;
+  width: 25px;
+  height: 3px;
+  background-color: #d8d8d8;
 }
 .spoiler__title::after {
   transform: rotate(90deg);
@@ -1276,6 +1287,18 @@ for display results work function in the process of develope
   overflow: hidden;
   height: 0;
   transition: height 0.7s ease, opacity 2s ease;
+}
+.spoiler__body ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.spoiler__body ol a {
+  text-decoration: none;
+  color: inherit;
 }
 .spoiler ._open-title::after {
   width: 0px;
