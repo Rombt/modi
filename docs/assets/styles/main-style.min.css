@@ -1274,6 +1274,7 @@ for display results work function in the process of develope
   padding-right: 15px;
   color: #000;
   overflow: hidden;
+  height: 0;
   transition: height 0.7s ease, opacity 2s ease;
 }
 .spoiler ._open-title::after {
